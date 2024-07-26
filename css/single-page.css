@@ -1,0 +1,256 @@
+:root {
+    --secondary-color: #acb02d;
+    
+}
+
+.project-intro {
+    margin-bottom: 30px;
+}
+
+.project-content {
+    margin-bottom: 80px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* 防止內容溢出 */
+    justify-content: center;
+    max-height: 600px;
+    margin-bottom: 50px;
+}
+
+#banner-background {
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.overhead-title {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    font-weight: 400;
+    line-height: 1.88;
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+}
+
+.overhead-title::after {
+    width: auto;
+    height: 1px;
+    content: "";
+    display: block;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    margin-left: 16px;
+    background-color: #cbcbcb;
+}
+
+.section {
+    padding: 30px 12px;
+}
+
+.editor {
+    padding: 30px 100px;
+}
+
+.section-h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+.section-h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+}
+
+.section-h3 {
+    line-height: 2;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    padding-top: 4px;
+}
+
+
+.editor img {
+    width: 100%;
+}
+
+.editor .section-block {
+    padding: 16px 0;
+}
+
+.editor .img-block {
+    padding: 8px 0;
+}
+
+.window-wrapper {
+    width: 100%;
+    height: 480px;
+    overflow: auto;
+}
+
+.editor .list-set {
+    margin: 8px 0;
+    padding-bottom: 4px;
+}
+
+.editor ul {
+    list-style: none;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.editor ul li {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.78;
+    letter-spacing: 1.2px;
+    position: relative;
+    display: block;
+    padding-left: 24px;
+    padding-bottom: 8px;
+}
+
+.editor ul li:before {
+        width: 8px;
+        height: 8px;
+        content: "";
+        position: absolute;
+        top: 12px;
+        left: 8px;
+        display: block;
+        background: var(--secondary-color);
+        border-radius: 50%;
+}
+
+.editor ul.sub-ul {
+    padding-left: 21px;
+}
+
+/*.section li.sub-li {
+    padding-bottom: 4px !important;
+}*/
+
+.editor ul li.sub-li:before {
+    width: 5px;
+    height: 5px;
+    left: 6.5px;
+    background: transparent;
+    border: #acb02d 1px solid;
+}
+
+.paragraph {
+    padding: 4px 0;
+    /*color: #555555;*/
+    line-height: 1.78;
+}
+
+.project-intro .category {
+    color: var(--secondary-color);
+    padding-bottom: 1.5rem;
+}
+
+.project-intro h1 {
+    font-size: 2.25rem;
+    padding-bottom: 4px;
+}
+
+.project-intro .brief {
+    color: #555555;
+}
+
+.grid-container {
+    display: grid;
+    row-gap: 0;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.grid-container.w-gap {
+    gap: 1.2rem;
+}
+
+.two-col-container {
+    row-gap: 8px;
+    width: 100%;
+}
+
+.role {
+    margin-bottom: 60px;
+}
+
+.img-description {
+    color: #707070;
+}
+
+/* Figma Protoype 視窗尺寸 */
+.figma-embed {
+    height:65vh;
+    display:flex;
+}
+
+@media (min-width: 1440px) {
+    .two-col-container {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) { 
+    .two-col-container {
+        grid-column: span 6;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .banner {
+        margin-bottom: 20px;
+    }
+    .project-intro h1 {
+        font-size: 32px;
+    }
+    .editor {
+        padding: 20px 0px;
+    }
+    .section-h1 {
+        font-size: 20px;
+    }
+    .section-h2 {
+        font-size: 20px;
+    }
+    .role {
+        margin-bottom: 40px;
+    }
+    .role .editor {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .two-col-container {
+        margin: 0 0px;
+        row-gap: 4px;
+        grid-column: 1 / -1;
+    }
+    .window-wrapper {
+        height: 320px;
+    }
+    .iframe-container iframe{
+        max-height: 206px;
+    }
+
+}
