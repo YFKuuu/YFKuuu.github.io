@@ -1,20 +1,9 @@
 // js/navbar-loader.js
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('../../public/navbar.html')
+    fetch('../../public/singlePage navbar.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('navbar-container').innerHTML = data;
-
-            // 動態添加 selected 標籤
-            const currentUrl = window.location.pathname.split('/').pop();
-            const navLinks = document.querySelectorAll('.navbar-item a');
-
-            navLinks.forEach(link => {
-                const href = link.getAttribute('href');
-                if ((href === currentUrl) || (currentUrl === '' && href === 'index.html')) {
-                    link.parentElement.classList.add('selected');
-                }
-            });
 
             // 重新綁定 toggleMenu 函數到點擊事件
             const menuIcon = document.getElementById('menuIcon');
