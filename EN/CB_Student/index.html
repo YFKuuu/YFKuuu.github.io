@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+    <head>
+        <title>CodingBar Student Platform｜Coding Practice</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/main.css">
+        <link rel="stylesheet" href="../../css/single-page.css">
+        <link rel="icon" href="../../img/favicon.svg">
+        <script src="../../js/singlePage-navbar.js"></script>
+    </head>
+    <body>
+        <!--插入 navbar-->
+        <div id="navbar-container"></div>
+        <!--Cover-->
+        <div class="cover">
+            <div class="banner container single-col">
+                <div class="banner-background">
+                    <img src="../../project/CB_Student/img/CB_Student_lg.jpg" id="banner-background">
+                </div>
+            </div>
+        </div>
+        <div class="project-content">
+            <!--Project intro-->
+            <div class="grid">
+                <div class="project-intro editor container single-col">
+                    <div class="category">UX Research ✹ UI/UX ✹ Web</div>
+                    <h1>CodingBar Student Platform｜Coding Practice</h1>
+                    <p class="brief">
+                        Redesign the interface of the coding practice platform to support cross-device usage.<br>
+                        Evaluate existing features, learning habits, and practice needs through concept proposals,
+                        discussions, and iterative revisions to make the design more user-friendly.
+                    </p>
+                </div>
+            </div>
+            <!--專案背景-->
+            <div class="grid">
+                <div class="editor container single-col">
+                    <div class="overhead-title">BACKDROP</div>
+                    <p class="paragraph">
+                        CodingBar is a youth programming education organization offering exclusive digital content, intelligent learning platforms, and teacher dispatch services.
+                        The Student Coding Practice Platform 3.0 redesign aims to enhance the learning interface's compatibility across different device sizes,
+                        addressing issues with tablet support and the efficiency of blockly programming learning.
+                    </p>
+                </div>
+            </div>
+            <!--專案目標-->
+            <div class="grid">
+                <div class="editor container single-col">
+                    <div class="overhead-title">OBJECTIVE</div>
+                    <div class="section-block">
+                        <h3>Design a learning platform that adapts to different devices and supports both text-based and blockly programming languages.</h3>
+                    </div>
+                </div>
+            </div>
+            <!--我的角色-->
+            <div class="grid">
+                <div class="editor container single-col">
+                    <div class="overhead-title">MY ROLE</div>
+                    <p class="paragraph">
+                        Design the student platform's practice interface based on educational needs
+                        and text-based, blockly programming question types.
+                    </p>
+                </div>
+            </div>
+            <div class="grid role">
+                <div class="container single-col editor" style="padding-top: 0; padding-bottom: 0;">
+                    <div class="grid-container" style="padding: 0;">
+                        <div class="two-col-container">
+                            <ul>
+                                <li class="two-col-item">UI / UX Design</li>
+                            </ul>
+                        </div>
+                        <div class="two-col-container">
+                            <ul>
+                                <li class="two-col-item">Design QA</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--困難與挑戰-->
+            <div class="grid">
+                <div class="editor container single-col">
+                    <div class="overhead-title">CHALLENGES</div>
+                    <div class="section-block">
+                        <div class="list-set">
+                            <h3>Integrating Extreme Needs with a Unified Design Framework
+                            </h3>
+                            <p class="paragraph">
+                                Text-based and blockly programming have vastly different learning models and operational methods.
+                                Integrating these into a single design framework under diverse service and customer conditions is challenging.
+                                Designing an interface that is simple and intuitive for blockly learners
+                                while also supporting complex text-based programming questions is a major challenge.
+                            </p>
+                        </div>
+                        <div class="list-set">
+                            <h3>Designing to Support Business Goals and Resource Constraints</h3>
+                            <p class="paragraph">
+                                Text-based programming practice is more suitable for computer devices,
+                                but the cost of providing computers is high for educational institutions.
+                                Tablets are a more affordable option for many providers.
+                                A key focus of the design is to minimize usability barriers on smaller devices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--成果與影響-->
+            <div class="grid outcome">
+                <div class="editor container single-col">
+                    <div class="overhead-title">RESULTS & IMPACT</div>
+                    <div class="section-block">
+                        <div class="list-set">
+                            <h3>Enhancing Overall User Experience and Stability</h3>
+                            <p class="paragraph">
+                                Successfully resolved issues with layout on smaller devices.
+                                After launched, the platform has seen no related bug reports, significantly improving the student learning experience.
+                            </p>
+                        </div>
+                        <div class="list-set">
+                            <h3>Expanding Business Opportunities</h3>
+                            <p class="paragraph">
+                                Designing an interface that supports blockly programming meets diverse educational needs and opens new commercial possibilities,
+                                particularly for after-school programs for younger students.
+                            </p>
+                        </div>
+                        <div class="list-set">
+                            <h3>Preparing for Future Developments</h3>
+                            <p class="paragraph">
+                                Reserved space in the coding area for tabbed pages to support multiple languages, file management, and teacher-student collaboration.
+                                This foundation will support the 4.0 update and uphold CodingBar’s core value of making programming fun.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--設計過程-->
+            <div class="grid">
+                <div class="editor container single-col">
+                    <div class="overhead-title">DESIGN PROCESS</div>
+                    <!--用戶痛點與需求分析-->
+                    <div class="section-block">
+                        <div class="section-h1">#1 User Needs and Pain Points Analysis</div>
+                        <div class="section-block">
+                            <div class="list-set">
+                                <h3 style="padding-bottom: 8px;">Text-Based Programming Learners</h3>
+                                <ul>
+                                    <li>Navigation Issues: Finding the way back to the course page is not intuitive.</li>
+                                    <li>AI Assistant Distractions: The AI assistant often blocks the view and cannot be closed, causing operational difficulties.</li>
+                                    <li>Focus on Coding Area: Most time is spent in the coding area, and there's no need for persistent visibility of problem statements after they have been read.</li>
+                                    <li>Unclosable Question Menu: The question menu occupies screen space without significant utility.</li>
+                                    <li>Guidance for Obstacles: When stuck on a problem, guidance is needed, but it is unclear where to find resources.
+                                        <img src="./img/CB_Student_01.png" style="margin-top: 8px;">
+                                    </li>
+                                    <li>Popup Execution Window: The popup execution window hinders the ability to compare code with execution results.
+                                        <img src="../../project/CB_Student/img/CB_Student_02.jpg" style="margin-top: 8px;">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>&nbsp;</div>
+                        <div class="list-set">
+                            <h3>Blockly Programming Learners</h3>
+                            <div class="section-block">
+                                <ul>
+                                    <li>Younger students (under grade 4) are not adept at using a mouse, and the current interface is unusable on tablet devices.</li>
+                                    <li>The learning model involves instructors guiding students step-by-step through programming concepts and demonstrating effects in real-time. Problem description blocks are not needed;
+                                        instead, more screen space is required for displaying the project simulator.
+                                        <img src="./img/CB_Student_03.png" style="margin-top: 8px;">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="list-set">
+                            <h3 style="padding-bottom: 8px;">After-School Program Providers</h3>
+                            <ul>
+                                <li>Consider of costs, tablets are more cost-effective than desktops or laptops.
+                                    However, the existing platform is nearly unusable on tablet devices.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <!--功能規劃與設計決策-->
+                    <div class="section-block">
+                        <div class="section-h1">#2 Function Planning and Design Decisions</div>
+                        <h3>Replan the interface layout based on needs, pain points, and platform functions without changing the workflow.</h3>
+                        <div class="section-block">
+                            <div class="list-set">
+                                <ul>
+                                    <li>
+                                        <strong>Maximize the Coding Area：</strong><br>
+                                        Text-Based Programming has long code length and makes reading difficult in a small coding window.
+                                        On the other hand, Blockly programming requires ample space for display and manipulation.
+                                        Maximizing the coding area is a primary consideration.
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <strong>Flatten Learning Resources and Make Them Visible：</strong><br>
+                                        Bring auxiliary resource menus to the forefront, enhancing learning efficiency and resource utilization.
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <strong>Function Menu on the Left：</strong><br>
+                                        Place question menus, notes, Q&A, and other functions in a list on the left side of the screen, allowing quick access with a thumb on tablet devices.
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <strong>Improve Page Navigation：</strong><br>
+                                        Based on user intuition, move navigation to the top of the page.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <!--設計概念提案與討論-->
+                    <div class="section-block">
+                        <div class="section-h1">#3 Design Concept Proposals and Discussions</div>
+                        <div class="list-set">
+                            <ul>
+                                <li>
+                                    <strong>Practice Screen：</strong>
+                                    By default, collapse the problem list and concentrate learning assistance functions such as question menu, notes, freecode, discussion, settings, and Agent on the left side.
+                                    Place problem assistance resources on the right side.
+                                    <img src="./img/CB_Student_issue 1.png" style="margin-top: 8px;">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list-set">
+                            <ul>
+                                <li>
+                                    <strong>Fill-in-the-Blank Questions：</strong>
+                                    Specially designed for beginners, these questions need discussion regarding their definition and interaction.
+                                    Conceptually, they are "learning assistance resources," but not purely guiding hints.
+                                    Should they be placed within hints or integrated into the existing smart Agent to enhance interaction?
+                                    <img src="./img/CB_Student_issue 2.png" style="margin-top: 8px;">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list-set">
+                            <ul>
+                                <li>
+                                    <strong>Notes, Freecode, Discussion, Settings：</strong>
+                                    Clicking to expand a window that shows and operates on a hierarchical level.
+                                    <img src="./img/CB_Student_issue 3.png" style="margin-top: 8px;">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section-block">
+                        <h3>Feedback from Instructors and R&D Team</h3>
+                        <div class="section-block">
+                            <div class="grid-container w-gap" style="padding: 0;">
+                                <div class="two-col-container">
+                                    <img src="./img/CB_Student_discussion n freedback_1.png">
+                                </div>
+                                <div class="two-col-container">
+                                    <img src="./img/CB_Student_discussion n freedback_2.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <!--根據回饋調整設計-->
+                    <div class="section-block">
+                        <div class="section-h1">#4 Design Adjustments Based on Feedback</div>
+                        <div class="list-set">
+                            <ul>
+                                <li>
+                                    <strong>Establish Menu Hierarchy：</strong>
+                                    Define the left menu for primary functions and the right menu for secondary functions, which are subordinate to the problem statements.
+                                    The right menu provides related descriptions, hints, handouts, and other downloadable resources.
+                                    Adjust the size of the main and secondary menus to establish hierarchy.
+                                </li>
+                                <li>
+                                    <strong>Question menu：</strong>
+                                    Primarily used for switching between problems.
+                                    Design it to expand when clicked and automatically navigate to the selected problem, then close the menu.
+                                    <div class="img-block">
+                                        <video
+                                        src="../../project/CB_Student/img/CB_Student_question.mp4"
+                                        width="100%" 
+                                        height="auto" 
+                                        autoplay="true" 
+                                        controls="true" >
+                                        </video>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Notes, FreeCode, Discussion：</strong>
+                                    To match the learning context, these functions will open on the right side of the screen when clicked from the function menu,
+                                    allowing students to reference code (or learning content) while taking notes,
+                                    asking questions, or comparing different coding approaches.
+                                    <div class="img-block">
+                                        <video
+                                        src="../../project/CB_Student/img/CB_Student_main menu.mp4"
+                                        width="100%" 
+                                        height="auto" 
+                                        autoplay="true" 
+                                        controls="true" >
+                                        </video>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Execution Results：</strong>
+                                    When users click "Execute," the result window will expand and display alongside the code,
+                                    enabling students to compare the code with the results.
+                                    <div class="img-block">
+                                        <video
+                                        src="../../project/CB_Student/img/CB_Student_running.mp4"
+                                        width="100%" 
+                                        height="auto" 
+                                        autoplay="true" 
+                                        controls="true" >
+                                        </video>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Question Statements, Hints, Solutions, and Resources：</strong>
+                                    Place these auxiliary learning resources on the right side using a toggle system.
+                                    Students can open or close these windows to stay focused on the coding area,
+                                    maximizing usable space for both tablet devices and blockly programming practice.
+                                    <div class="img-block">
+                                        <video
+                                        src="../../project/CB_Student/img/CB_Student_resource.mp4"
+                                        width="100%" 
+                                        height="auto" 
+                                        autoplay="true" 
+                                        controls="true" >
+                                        </video>
+                                    </div>
+                                    <div class="img-block">
+                                        <video
+                                        src="../../project/CB_Student/img/CB_Student_blockly.mp4"
+                                        width="100%" 
+                                        height="auto" 
+                                        autoplay="true" 
+                                        controls="true" >
+                                        </video>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
