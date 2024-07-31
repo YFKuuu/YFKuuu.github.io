@@ -1,6 +1,9 @@
-// js/navbar-loader.js
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('../../public/singlePage navbar.html')
+    // 判斷當前頁面語言
+    const isEN = window.location.pathname.includes('/EN/');
+    const navbarFile = isEN ? '../../public/singlePage navbar_EN.html' : '../../public/singlePage navbar.html';
+
+    fetch(navbarFile)
         .then(response => response.text())
         .then(data => {
             document.getElementById('navbar-container').innerHTML = data;

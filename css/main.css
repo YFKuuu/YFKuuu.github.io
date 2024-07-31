@@ -184,6 +184,9 @@ body {
     align-items: center;
     justify-content: flex-end;
 }
+.navbar-item {
+    width: 120px;
+}
 
 .navbar-item-container {
     display: flex;
@@ -191,7 +194,7 @@ body {
 }
 
 .navbar-item a {
-    margin-left: 60px;
+    /* margin-left: 60px; */
     text-decoration: none;
     font-size: 1rem;
 }

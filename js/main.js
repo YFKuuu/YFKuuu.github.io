@@ -1,17 +1,31 @@
-// js/navbar-loader.js
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('../../public/navbar.html')
+    // 判斷當前頁面語言
+    const isEN = window.location.pathname.includes('/EN/');
+    const navbarFile = isEN ? '../../public/navbar_EN.html' : '../../public/navbar.html';
+
+    fetch(navbarFile)
         .then(response => response.text())
         .then(data => {
             document.getElementById('navbar-container').innerHTML = data;
 
             // 動態添加 selected 標籤
-            const currentUrl = window.location.pathname.split('/').pop();
+            const currentUrl = window.location.pathname;
+            console.log('Current URL:', currentUrl); // 檢查當前 URL
             const navLinks = document.querySelectorAll('.navbar-item a');
 
             navLinks.forEach(link => {
                 const href = link.getAttribute('href');
-                if ((href === currentUrl) || (currentUrl === '' && href === 'index.html')) {
+                const fullPath = new URL(href, window.location.origin).pathname; // 將相對路徑轉換為絕對路徑
+                console.log('Checking link:', fullPath); // 檢查每個 link 的 fullPath
+
+
+                // 根據 href 的不同情況來進行匹配
+                if ((currentUrl === fullPath) ||
+                    (currentUrl === '/' && fullPath === '/index.html') ||
+                    (currentUrl === '/EN/' && fullPath === '/EN/index.html') ||
+                    (currentUrl.endsWith('/index.html') && fullPath === '/index.html') ||
+                    (currentUrl.endsWith('/about.html') && fullPath === '/about.html')) {
+                    console.log('Match found:', fullPath); // 當找到匹配的 link
                     link.parentElement.classList.add('selected');
                 }
             });
