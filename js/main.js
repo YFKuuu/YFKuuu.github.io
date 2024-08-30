@@ -75,6 +75,30 @@ document.addEventListener("DOMContentLoaded", function() {
                     navbar.classList.remove('scrolled');
                 }
             });
+
+            // Tab functionality
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const projectCards = document.querySelectorAll('.project-card');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    projectCards.forEach(card => {
+                        if (card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // 初始化顯示 UI/UX 項目
+            document.querySelector('.tab-button[data-category="ui-ux"]').click();
         })
         .catch(error => console.error('Error loading navbar:', error));
 });
